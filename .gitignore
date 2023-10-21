@@ -1,0 +1,14 @@
+.DS_Store
+.vscode
+.clangd
+.cache
+.gn
+.gnfiles
+out/
+build/
+site/
+compile_commands.json
+project.code-workspace
+*.out
+tmp*.cpp
+main.cpp
