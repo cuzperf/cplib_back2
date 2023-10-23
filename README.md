@@ -1,5 +1,7 @@
 # C++ Lib for Programming Contest
 
+[![Code Coverage](https://github.com/cuzperf/cplib/actions/workflows/test.yml/badge.svg)](https://github.com/cuzperf/cplib/actions/workflows/test.yml)
+
 > Please run `python prepare.py` first
 
 ## 进程
