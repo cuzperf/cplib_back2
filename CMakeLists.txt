@@ -17,4 +17,5 @@ include(${CMAKE_SOURCE_DIR}/cmake/coverage.cmake)
 
 # add test
 add_subdirectory(3rdparty/googletest)
+add_subdirectory(src)
 add_subdirectory(tests)
