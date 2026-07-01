@@ -20,6 +20,6 @@ list(APPEND LCOV_REMOVE_EXTRA ${3RD_PARTY_FILES} ${TEST_FILES})
 add_custom_target(coverage
   COMMAND lcov --directory . --capture --output-file coverageall.info
   COMMAND lcov --remove coverageall.info ${LCOV_REMOVE_EXTRA} --output-file coverage.info
-  COMMAND genhtml coverage.info --output-directory coverage
+  COMMAND genhtml coverage.info --output-directory coverage_report
   WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
 )

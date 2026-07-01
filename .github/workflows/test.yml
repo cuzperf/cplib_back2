@@ -15,7 +15,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up Cplib and CMake
       run: |
@@ -48,13 +48,18 @@ jobs:
           cmake --build build --target coverage
         fi
       shell: bash
+    - name: Upload coverage report
+      uses: actions/upload-artifact@v2
+      with:
+        name: coverage
+        path: build/coverage_report
 
   build-windows:
     runs-on: windows-latest
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up Cplib and CMake
       run: |
